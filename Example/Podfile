@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TPRouter_Example' do
+  pod 'TPRouter', :path => '../'
+
+  target 'TPRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
