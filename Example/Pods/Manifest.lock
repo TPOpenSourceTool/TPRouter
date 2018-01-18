@@ -1,16 +1,19 @@
 PODS:
+  - ICXPublicCategory (0.1.1)
   - TPRouter (0.1.0)
 
 DEPENDENCIES:
-  - TPRouter (from `../`)
+  - ICXPublicCategory
+  - TPRouter (from `/Users/tangpeng/Documents/ICXPrivatePod/TPRouter`)
 
 EXTERNAL SOURCES:
   TPRouter:
-    :path: ../
+    :path: /Users/tangpeng/Documents/ICXPrivatePod/TPRouter
 
 SPEC CHECKSUMS:
-  TPRouter: c475ba85b0898d8eb080bc311cd1678b146c94ac
+  ICXPublicCategory: 8188641e0c93fc2a8890b415d07ffe8f0fad275a
+  TPRouter: 01d16d623f9d3b68d323e887640923dab7c2de8f
 
-PODFILE CHECKSUM: cff21c3cac8be203340b93d55dc22b4e365a418c
+PODFILE CHECKSUM: e789c587142f0fcdb36e32c10baa4fa3d09ae35f
 
 COCOAPODS: 1.3.1

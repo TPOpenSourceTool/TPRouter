@@ -4,15 +4,27 @@
 <dict>
 	<key>NormalViewControllerName</key>
 	<dict>
-		<key>tprouter://home</key>
-		<string>HomeViewController</string>
+		<key>meum://Adviser:80/MyAdviser</key>
+		<string>MineVC</string>
+		<key>meum://order:80/logistics</key>
+		<string>LogisticsInfoVC</string>
+		<key>meum://sample:80/mySample</key>
+		<string>MySampleVC</string>
+		<key>meum://product:80/detail</key>
+		<string>ShopChartVC</string>
+		<key>meum://doctor:80/index</key>
+		<string>MeumDoctorVC</string>
+		<key>meum://sport:80/index</key>
+		<string>TYSportTabBarVC</string>
+		<key>meum://device:80/bmg</key>
+		<string>TYBloodTabBarVC</string>
 	</dict>
 	<key>WebViewControllerName</key>
 	<dict>
 		<key>http</key>
-		<string>WebViewControllerHttp</string>
+		<string>DetailWebLoadVC</string>
 		<key>https</key>
-		<string>WebViewControllerHttps</string>
+		<string>DetailWebLoadVC</string>
 	</dict>
 </dict>
 </plist>

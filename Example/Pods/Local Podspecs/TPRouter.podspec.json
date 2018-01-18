@@ -1,9 +1,9 @@
 {
   "name": "TPRouter",
   "version": "0.1.0",
-  "summary": "A short description of TPRouter.",
+  "summary": "This is my router",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/TPQuietBro/TPRouter",
+  "homepage": "https://github.com/TPOpenSourceTool/TPRouter",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "TPQuietBro": "tangpeng@icarbonx.com"
   },
   "source": {
-    "git": "https://github.com/TPQuietBro/TPRouter.git",
+    "git": "https://github.com/TPOpenSourceTool/TPRouter.git",
     "tag": "0.1.0"
   },
   "platforms": {

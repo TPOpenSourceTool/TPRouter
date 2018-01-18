@@ -68,6 +68,10 @@
     //编码
     url = [url stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
+    if ([self hasChinese:url]) {
+        url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    }
+    
     //控制器对应的key
     NSString *controllerKey = [self controllerKey:url];
     
@@ -166,7 +170,16 @@
 + (NSString *)path:(NSString *)url{
     return [NSURL URLWithString:url].path;
 }
-
++ (BOOL)hasChinese:(NSString *)str {
+    for(int i=0; i< [str length];i++){
+        int a = [str characterAtIndex:i];
+        if( a > 0x4e00 && a < 0x9fff)
+        {
+            return YES;
+        }
+    }
+    return NO;
+}
 #pragma mark - instance methods
 
 - (void)pushViewControllerWithNativeURL:(NSString *)URL withParams:(NSDictionary *)param animated:(BOOL)Yes{
@@ -186,6 +199,10 @@
     NSString *url = [URL stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     url = [url stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    if ([self hasChinese:url]) {
+        url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    }
     //控制器对应的key
     NSString *controllerKey = [self controllerKey:url];
     
@@ -269,7 +286,7 @@
 }
 
 - (NSString *)scheme:(NSString *)url{
-    
+
     return [NSURL URLWithString:url].scheme;
 }
 
@@ -286,6 +303,17 @@
 }
 - (NSString *)path:(NSString *)url{
     return [NSURL URLWithString:url].path;
+}
+
+- (BOOL)hasChinese:(NSString *)str {
+    for(int i=0; i< [str length];i++){
+        int a = [str characterAtIndex:i];
+        if( a > 0x4e00 && a < 0x9fff)
+        {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 @end

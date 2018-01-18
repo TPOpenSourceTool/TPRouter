@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "TPRouter.h"
+#import "TPRouterConfig.h"
+#import "UIViewController+RouterParams.h"
 
 FOUNDATION_EXPORT double TPRouterVersionNumber;
 FOUNDATION_EXPORT const unsigned char TPRouterVersionString[];

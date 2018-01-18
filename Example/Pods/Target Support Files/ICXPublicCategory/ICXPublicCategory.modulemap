@@ -1,0 +1,6 @@
+framework module ICXPublicCategory {
+  umbrella header "ICXPublicCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}
